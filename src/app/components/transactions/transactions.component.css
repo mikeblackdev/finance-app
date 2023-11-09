@@ -1,0 +1,38 @@
+#transactions-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid var(--gray);
+    margin-left: -1px; 
+}
+
+#transaction-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+#transactions {
+    gap: 5px;
+    overflow-x: scroll;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.date {
+    color: var(--dark-gray);
+}
+
+#search {
+    height: 35px;
+}

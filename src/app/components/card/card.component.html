@@ -1,0 +1,8 @@
+<div id="card-container" *ngIf="card" [ngStyle]="{ 'background-color': card.color }">
+    <div id="amount">{{ card.amount }}</div>
+    <div id="id-and-logo">
+        <div id="id-prefix">....</div>
+        <div id="id">{{ card.id }}</div>
+        <img id="logo" src="{{ card.logo }}">
+    </div>
+</div>

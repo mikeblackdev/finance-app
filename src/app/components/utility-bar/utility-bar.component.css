@@ -1,0 +1,22 @@
+#utility-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    border: none;
+    background: transparent;
+    color: var(--blue);
+}
+
+.btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    height: 45px;
+    width: 45px;
+}

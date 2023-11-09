@@ -1,0 +1,30 @@
+#transaction-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    height: 60px;
+}
+
+#name-and-date {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#date {
+    color: var(--dark-gray);
+    font-size: small;
+}
+
+#amount {
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+#icon {
+    height: 45px;
+    width: 45px;
+}

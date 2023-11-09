@@ -1,0 +1,45 @@
+#card-container {
+    height: 100%;
+    width: 260px;
+    border-radius: 12px;
+    color: var(--white);
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+#amount {
+    font-size: 22px;
+    height: 100%;
+    padding-top: 20px;
+
+}
+
+#id-and-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    align-self: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding-bottom: 20px;
+}
+
+#id {
+    width: 100%;
+}
+
+img {
+    height: 30px;
+}
+
+#id-prefix {
+    align-self: center;
+    justify-self: center;
+    margin-right: 4px;
+    padding-bottom: 6px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
