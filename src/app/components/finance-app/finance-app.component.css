@@ -33,3 +33,18 @@ app-bar {
   border-bottom-right-radius: 15px;
   margin: 0;
 }
+
+/* hanndle mobile landscape */
+@media (max-width: 768px) {
+  @media screen and (orientation: landscape) {
+    #cards-and-utility-bar {
+      height: 90%;
+    }
+    transactions {
+      display: none;
+    }
+    app-bar {
+      display: none;
+    }
+  }
+}

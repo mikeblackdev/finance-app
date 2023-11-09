@@ -37,3 +37,11 @@ img {
   font-weight: bold;
   letter-spacing: 2px;
 }
+
+/* hanndle landscape */
+@media screen and (orientation: landscape) {
+  #card-container {
+    height: 12em;
+    width: 18em;
+  }
+}
