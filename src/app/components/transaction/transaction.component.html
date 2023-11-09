@@ -1,8 +1,13 @@
 <div id="transaction-container" *ngIf="transaction">
-    <img id="icon" src="{{ transaction.icon }}">
-    <div id="name-and-date">
-        <div id="name">{{ transaction.name }}</div>
-        <div id="date">{{ transaction.date }}</div>
-    </div>
-    <div id="amount" [ngStyle]="{ 'color': transaction.isNegative ? 'red' : 'green' }">{{ transaction.amount }}</div>
+  <img id="icon" src="{{ transaction.icon }}" />
+  <div id="name-and-date">
+    <div id="name">{{ transaction.name }}</div>
+    <div id="date">{{ transaction.date }}</div>
+  </div>
+  <div
+    id="amount"
+    [ngStyle]="{ color: transaction.isNegative ? 'red' : 'green' }"
+  >
+    {{ transaction.amount }}
+  </div>
 </div>

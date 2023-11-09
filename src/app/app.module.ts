@@ -26,15 +26,10 @@ import { DummyCardService } from './services/dummy-card.service';
     UtilityBarComponent,
     TransactionsComponent,
     TransactionComponent,
-    AppBarComponent
+    AppBarComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [
-    DummyTransactionService,
-    DummyCardService
-  ],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule],
+  providers: [DummyTransactionService, DummyCardService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
