@@ -1,12 +1,12 @@
 #card-container {
-  height: 100%;
-  width: 260px;
-  border-radius: 12px;
-  color: var(--white);
-  padding-left: 12px;
-  padding-right: 12px;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 280px;
+  color: var(--white);
+  border-radius: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 #amount {
@@ -20,9 +20,6 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  align-self: flex-end;
-  justify-content: flex-end;
-  align-content: flex-end;
   padding-bottom: 20px;
 }
 
@@ -35,8 +32,6 @@ img {
 }
 
 #id-prefix {
-  align-self: center;
-  justify-self: center;
   margin-right: 4px;
   padding-bottom: 6px;
   font-weight: bold;

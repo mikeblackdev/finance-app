@@ -1,9 +1,9 @@
 #app-bar-container {
   display: flex;
-  border-top: 1px solid var(--gray);
   justify-content: space-around;
   height: 50px;
   background-color: var(--white);
+  border-top: 1px solid var(--gray);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }

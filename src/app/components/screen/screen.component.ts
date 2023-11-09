@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+/**
+ * Class that mocks up the screen of an electronic device
+ */
 @Component({
   selector: 'screen',
   templateUrl: './screen.component.html',

@@ -2,10 +2,17 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Card } from '../interfaces/card.interface';
 
+/**
+ * Dummy service for mimicking an api for cards
+ * Would be replaced by a service with real api calls
+ */
 @Injectable()
 export class DummyCardService {
   private _cards!: Card[];
 
+  /**
+   * Initializes cards
+   */
   constructor() {
     const masterCard: Card = {
       amount: '$542.25',
@@ -22,6 +29,10 @@ export class DummyCardService {
     this._cards = [masterCard, ukranianCard];
   }
 
+  /**
+   * Mimics an http get request for cards
+   * @returns an observable of cards
+   */
   public getCards(): Observable<Card[]> {
     return of(this._cards);
   }

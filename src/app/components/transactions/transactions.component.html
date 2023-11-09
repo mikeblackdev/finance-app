@@ -1,12 +1,12 @@
 <div id="transactions-container">
   <div id="transaction-header">
-    <div id="transactions-title">Transactions</div>
-    <img id="search" src="../../../assets/search.jpg" />
+    <div>Transactions</div>
+    <img src="../../../assets/search.jpg" />
   </div>
   <div id="transactions">
-    <div class="transaction-obj" *ngFor="let t of transactions">
-      <div class="date">{{ t.date }}</div>
-      <div class="transaction" *ngFor="let transaction of t.transactions">
+    <div *ngFor="let obj of transactions">
+      <div class="date">{{ obj.date }}</div>
+      <div *ngFor="let transaction of obj.transactions">
         <transaction [transaction]="transaction"></transaction>
       </div>
     </div>

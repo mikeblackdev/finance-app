@@ -1,16 +1,16 @@
 #screen-container {
   display: flex;
-  height: 100%;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
   background-color: var(--light-gray);
 }
 
 #screen {
-  border: 2px solid var(--gray);
   height: 90%;
   width: 90%;
+  border: 2px solid var(--gray);
   border-radius: 20px;
 }
 

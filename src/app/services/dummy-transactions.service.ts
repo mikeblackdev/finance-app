@@ -3,10 +3,17 @@ import { Observable, of } from 'rxjs';
 import { Transactions } from '../interfaces/transactions.interface';
 import { Transaction } from '../interfaces/transaction.interface';
 
+/**
+ * Dummy service for mimicking an api for transactions
+ * Would be replaced by a service with real api calls
+ */
 @Injectable()
 export class DummyTransactionService {
   private _transactions!: Transactions[];
 
+  /**
+   * Initializes transactions
+   */
   constructor() {
     const netflix: Transaction = {
       name: 'Netflix',
@@ -47,6 +54,10 @@ export class DummyTransactionService {
     this._transactions = [yesterday, july2];
   }
 
+  /**
+   * Mimics an http get request for transactions
+   * @returns an observable of transactions
+   */
   public getTransactions(): Observable<Transactions[]> {
     return of(this._transactions);
   }
